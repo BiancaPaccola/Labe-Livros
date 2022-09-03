@@ -1,11 +1,19 @@
 # LabeLivro
 
-Projeto protótipo de ecommerce realizado nas aulas de React do curso de Desenvolvimento Web.
+Projeto protótipo de e-commerce realizado nas aulas de React do curso de Desenvolvimento Web, para treinar lógica de carrinho de compras.
 
 ## Tecnologias usadas:
 
 React e Styled Components.
 Testado em desktop;
+
+## Conceitos aplicados:
+- Props;
+- Local Storage
+- Hooks useState e useEffect;
+- Mock de dados;
+- Map, filter e findIndex;
+- Spread operator.
 
 ## Funcionalidades
 
