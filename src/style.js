@@ -3,7 +3,23 @@ import styled from "styled-components";
 export const Container = styled.main`
     display: flex;
     align-items: flex-start;
+    max-width: 100vw;
     margin: 0;
+
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        @media (max-width: 767px){
+        flex-direction: column;
+    }
+    }
+
+    @media (max-width: 1077px){
+        flex-direction: column;
+    }
 `
 
 export const Header = styled.header`
@@ -15,7 +31,7 @@ export const Header = styled.header`
     justify-content: center;
 
     img {
-        height: 80%;
+        max-height: 80%;
     }
 
     p{
@@ -26,6 +42,10 @@ export const Header = styled.header`
                 font-weight: bold;
                 font-family: 'Pacifico', cursive;
             }
+
+            @media (max-width: 626px) {
+                display: none;
+            }
     }
 `
 
@@ -34,13 +54,14 @@ export const ContainerProd = styled.section`
     width: 60%;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 15px 10px;   
-    margin: 15px 0 0 15px;
+    margin-top: 3%;
 `
 
 export const CardProd = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 35%;
     align-items: center;
     justify-content: space-between;
 
@@ -116,9 +137,18 @@ export const AreaFiltos = styled.section`
     display: flex;
     flex-direction: column;
     padding: 100px 10px;
-    align-self: flex-start;
     background-color: #b2bec3;
-    height: 100vh;
+    min-height: 100vh;
+
+    @media (max-width: 1077px){
+        width: 100vw;
+        min-height: 50px;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 `
 
 export const AreaCarrinho = styled.aside`

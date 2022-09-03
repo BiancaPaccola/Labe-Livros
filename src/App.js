@@ -148,14 +148,16 @@ const novoCarrinho = prodCarrinho.map((item, index)=>{
       setValorMax = {setValorMax}
       setNome = {setNome}
       />
-      <ContainerProd >
-      {gridDeProdutos}
-      </ContainerProd>
-      <AreaCarrinho>
-      <h1>Carrinho:</h1>
-      {novoCarrinho}
-      <p><strong>Total:</strong> {somaCarrinho.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
-    </AreaCarrinho>
+      <div>
+        <ContainerProd >
+        {gridDeProdutos}
+        </ContainerProd>
+        <AreaCarrinho>
+        <h1>Carrinho:</h1>
+        {novoCarrinho}
+        <p><strong>Total:</strong> {somaCarrinho.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+        </AreaCarrinho>
+      </div>
     </Container>
     </div>
   );
